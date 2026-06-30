@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on008062-blue)](https://doi.org/10.82901/nemar.on008062)
+
 EEG and liking responses to sonic-seasoning soundscapes.
 
 Per participant: one combined EEG file (eyes-open + eyes-closed baseline + ~17 s exposure to jungle and deconstruct
