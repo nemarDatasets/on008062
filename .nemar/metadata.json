@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG and hedonic responses to sonic-seasoning soundscapes",
+  "description": "This dataset comprises electroencephalography (EEG) recordings and hedonic ratings collected during exposure to sonic-seasoning soundscapes. Participants completed eyes-open and eyes-closed baseline recordings followed by approximately 17-second exposures to jungle and deconstruct soundscapes while EEG was continuously recorded. The dataset includes raw EEG data, event markers, liking ratings, baseline state assessments, and stimulus audio files, with a processed EEGLAB-compatible version provided in the derivatives folder.",
+  "methods_description": "EEG was recorded using EPOC X hardware with bandpass filtering applied during acquisition. Each participant completed one combined EEG session consisting of eyes-open baseline (~20 s, participant-controlled duration), eyes-closed baseline (~20 s, participant-controlled duration), and approximately 17-second exposures to two soundscape conditions (jungle and deconstruct). Liking ratings and baseline-state survey items were collected per participant. Stimulus audio files are included in the /stimuli directory.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,27 @@
     "Felipe Reinoso-Carvalho": {},
     "Brayan Rodríguez": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds008062.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "hedonic responses"
+    },
+    {
+      "term": "soundscapes"
+    },
+    {
+      "term": "sonic seasoning"
+    },
+    {
+      "term": "auditory perception"
+    },
+    {
+      "term": "resting state"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on008062",
       "identifier_type": "URL",
@@ -24,15 +41,20 @@
       "identifier": "https://nemar.org/dataset/on008062",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds008062.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "24.5 MB (94 files)"
   ],
   "formats": [
     ".edf",
@@ -41,29 +63,8 @@
     ".md",
     ".set",
     ".tsv",
-    ".wav"
+    ".wav",
+    ".yml"
   ],
-  "description": "This dataset comprises electroencephalography (EEG) recordings and behavioral ratings from participants exposed to sonic-seasoning soundscapes. Each participant completed a session including eyes-open and eyes-closed baseline periods followed by approximately 17-second exposures to jungle and deconstruct soundscapes, with concurrent hedonic (liking) ratings. The dataset includes raw EEG data, event markers, participant demographics, baseline survey responses, and stimulus audio files, along with processed EEGLAB-compatible derivatives for secondary analysis.",
-  "methods_description": "EEG was recorded using EPOC X hardware with bandpass filtering applied during acquisition. Each session consisted of resting-state calibration (eyes-open and eyes-closed baseline periods controlled by participant button press) followed by exposure to two soundscape conditions (jungle and deconstruct, ~17 s each). Participants provided liking ratings and completed baseline-state survey items. Recording timestamps were removed for de-identification; participant IDs are sequential and anonymized.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "hedonic response"
-    },
-    {
-      "term": "sound perception"
-    },
-    {
-      "term": "resting state"
-    },
-    {
-      "term": "audio stimuli"
-    },
-    {
-      "term": "sensory processing"
-    }
-  ],
-  "source_hash": "7355ce07401e9cc04bc3b45533e086e13f19179a727b22a3195f202c10910986"
+  "source_hash": "d756059f8d7fafa537f281a57906661b6b6f1cc0250ab58e73cc83549dbe8e68"
 }
