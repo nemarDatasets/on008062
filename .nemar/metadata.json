@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "EEG and hedonic responses to sonic-seasoning soundscapes",
-  "description": "This dataset comprises electroencephalography (EEG) recordings and behavioral ratings collected during exposure to sonic-seasoning soundscapes. Participants completed eyes-open and eyes-closed baseline recordings followed by approximately 17-second exposures to jungle and deconstruct soundscapes while EEG was continuously recorded. The dataset includes raw EEG data, event markers, hedonic liking ratings, baseline state assessments, and stimulus audio files, with processed EEGLAB-compatible derivatives provided for secondary analysis.",
-  "methods_description": "EEG was recorded using EPOC X hardware with bandpass filtering applied during acquisition. Each participant completed a combined session consisting of eyes-open baseline (~20 s, participant-controlled duration), eyes-closed baseline (~20 s, participant-controlled duration), and sequential exposures to two soundscape conditions (jungle and deconstruct, ~17 s each). Liking ratings and baseline state survey items were collected per participant. Recording timestamps were removed and participant IDs were de-identified sequentially.",
+  "description": "This dataset contains EEG recordings and hedonic (liking) ratings collected from participants exposed to sonic-seasoning soundscapes (jungle and deconstruct), alongside eyes-open and eyes-closed resting calibration baselines. Data were recorded with EPOC X consumer-grade EEG hardware and include behavioral survey responses and stimulus audio files. The dataset supports research on crossmodal sensory perception and the influence of auditory soundscapes on hedonic evaluation.",
+  "methods_description": "EEG was recorded per participant as a single combined file comprising eyes-open and eyes-closed resting baselines followed by ~17 s exposure segments to jungle and deconstruct soundscapes. Data were released as recorded with only EPOC X hardware bandpass filtering applied (no additional software filtering), and recording timestamps were removed. Events.tsv files mark segment boundaries, and participants.tsv contains liking ratings and baseline-state survey items. A processed, EEGLAB-ready derivative of the two soundscape conditions is provided as per-condition .set files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,19 +16,21 @@
       "term": "EEG"
     },
     {
-      "term": "hedonic responses"
+      "term": "soundscape"
     },
     {
-      "term": "soundscapes"
+      "term": "hedonic response"
+    },
+    {
+      "term": "Auditory Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
     },
     {
       "term": "sonic seasoning"
     },
     {
-      "term": "auditory perception"
-    },
-    {
-      "term": "resting state"
+      "term": "crossmodal perception"
     }
   ],
   "related_identifiers": [
