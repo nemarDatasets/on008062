@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG and hedonic responses to sonic-seasoning soundscapes",
-  "description": "This dataset contains EEG recordings and hedonic (liking) ratings collected from participants exposed to sonic-seasoning soundscapes (jungle and deconstruct), alongside eyes-open and eyes-closed resting calibration baselines. Data were recorded with EPOC X consumer-grade EEG hardware and include behavioral survey responses and stimulus audio files. The dataset supports research on crossmodal sensory perception and the influence of auditory soundscapes on hedonic evaluation.",
-  "methods_description": "EEG was recorded per participant as a single combined file comprising eyes-open and eyes-closed resting baselines followed by ~17 s exposure segments to jungle and deconstruct soundscapes. Data were released as recorded with only EPOC X hardware bandpass filtering applied (no additional software filtering), and recording timestamps were removed. Events.tsv files mark segment boundaries, and participants.tsv contains liking ratings and baseline-state survey items. A processed, EEGLAB-ready derivative of the two soundscape conditions is provided as per-condition .set files.",
+  "description": "This dataset contains EEG recordings and hedonic (liking) ratings collected from participants exposed to sonic-seasoning soundscapes. Each participant has a combined recording with eyes-open and eyes-closed baselines followed by roughly 17 s exposures to jungle and deconstruct soundscapes. Liking ratings and baseline-state survey items are included in participants.tsv, and the stimulus audio is provided. An EEGLAB-ready processed version is provided as a derivative.",
+  "methods_description": "EEG was recorded with an EPOC X headset, with hardware bandpass filtering only and no additional software filtering. Each session included eyes-open and eyes-closed calibration segments, which were advanced by a participant-controlled button press, so their durations vary. These were followed by about 17 s exposures to the jungle and deconstruct soundscapes. Liking ratings and baseline-state survey items were collected from each participant.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,10 +16,16 @@
       "term": "EEG"
     },
     {
-      "term": "soundscape"
+      "term": "sonic seasoning"
+    },
+    {
+      "term": "soundscapes"
     },
     {
       "term": "hedonic response"
+    },
+    {
+      "term": "liking"
     },
     {
       "term": "Auditory Perception",
@@ -27,10 +33,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
     },
     {
-      "term": "sonic seasoning"
-    },
-    {
-      "term": "crossmodal perception"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
@@ -56,7 +61,7 @@
     "eeg"
   ],
   "sizes": [
-    "24.5 MB (94 files)"
+    "23.39 MB (94 files)"
   ],
   "formats": [
     ".edf",
